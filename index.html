@@ -1,263 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>iByte Hosting - Next Generation Game-Server Hosting</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>iByte Hosting | Simple Game Server Hosting</title>
+  <meta name="description" content="Simple, reliable game server hosting with fast setup, practical features, flexible upgrades, and an easy control panel for popular games and growing communities.">
   <meta name="robots" content="index,follow">
-  <meta name="description" content="iByte Hosting - Next Generation Game-Server Hosting" />
-  <meta name="keywords"
-    content="Game Server Hosting, Dedicated Game Servers, Affordable Game Hosting, Fast Game Servers, Reliable Game Hosting, 24/7 Game Server Support, Custom Game Server Solutions, High-Performance Game Servers, Multiplayer Game Hosting, Gaming Community Servers, Online Game Hosting, Secure Game Server Hosting, Game Server Management, Scalability for Game Servers, Game Server Uptime Guarantee, Minecraft Server Hosting, Ark: Survival Evolved Servers, Rust Server Hosting, Game Server Control Panel, Instant Server Setup" />
-  <meta property="og:title" content="iByte Hosting Home" />
-  <meta property="og:description" content="iByte Hosting - Next Generation Game-Server Hosting" />
-  <meta property="og:image" content="assets/square_logo___copy.png" />
-  <link rel="icon" href="assets/favicon.png" />
+  <meta property="og:title" content="iByte Hosting | Simple Game Server Hosting">
+  <meta property="og:description" content="Reliable game server hosting with fast setup, backups, DDoS protection, and a straightforward control panel.">
+  <meta property="og:image" content="assets/square_logo___copy.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/square_logo___copy.png">
   <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-  <header>
+  <header class="site-header">
     <div class="container">
       <div class="header-content">
-        <a href="https://ibytehosting.com" class="logo">
-          <img alt="iByte Hosting Logo" src="assets/square_logo___copy.png" />
+        <a href="./index.html" class="logo" aria-label="iByte Hosting home">
+          <img alt="iByte Hosting Logo" src="assets/square_logo___copy.png">
           <span>iByte Hosting</span>
         </a>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Primary navigation">
           <div class="navbar-container">
-            <input type="checkbox" id="navbar-toggle" style="display: none;">
-            <label for="navbar-toggle" class="navbar-burger">
+            <input type="checkbox" id="navbar-toggle" class="nav-toggle">
+            <label for="navbar-toggle" class="navbar-burger" aria-label="Toggle navigation">
               <span></span>
               <span></span>
               <span></span>
             </label>
             <div class="navbar-items">
-              <a href="https://panel.ibytehosting.com" target="_blank">Panel</a>
-              <a href="https://store.ibytehosting.com" target="_blank">Store</a>
-              <a href="https://wiki.ibytehosting.com" target="_blank">Wiki</a>
-              <a href="https://status.ibytehosting.com" target="_blank">Status</a>
+              <a href="https://panel.ibytehosting.com" target="_blank" rel="noreferrer">Panel</a>
+              <a href="https://store.ibytehosting.com" target="_blank" rel="noreferrer">Plans</a>
+              <a href="https://wiki.ibytehosting.com" target="_blank" rel="noreferrer">Docs</a>
+              <a href="https://status.ibytehosting.com" target="_blank" rel="noreferrer">Status</a>
             </div>
           </div>
         </nav>
       </div>
     </div>
   </header>
+
   <main>
     <section class="hero">
-      <div class="container">
-        <h1>Game Server Hosting Made Simple</h1>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Reliable game server hosting</p>
+          <h1>Next Generation Server Hosting.</h1>
+          <p class="hero-lead">
+            iByte Hosting gives you a clear and dependable way to deploy, manage, and grow game servers without unnecessary complexity.
+            Start with one of the featured games below, or use the full store to browse everything else we offer.
+          </p>
+          <div class="hero-actions">
+            <a href="https://store.ibytehosting.com" class="btn btn-primary" target="_blank" rel="noreferrer">Browse Plans</a>
+            <a href="https://panel.ibytehosting.com" class="btn btn-secondary" target="_blank" rel="noreferrer">Open Panel</a>
+          </div>
+          <p class="hero-summary">Fast setup, practical features, simple management, and room to upgrade when you need it.</p>
+        </div>
+        <div class="hero-card">
+          <h2>What you can expect</h2>
+          <ul class="hero-points">
+            <li>Fast setup with a control panel that stays easy to use.</li>
+            <li>Practical features for both private servers and larger communities.</li>
+            <li>Flexible upgrades when your server needs more room or performance.</li>
+          </ul>
+          <p class="hero-price">Plans start from <strong>$3.60/month</strong>.</p>
+        </div>
       </div>
     </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <strong>6</strong>
+          <span>featured games shown here</span>
+        </div>
+        <div class="stat-card">
+          <strong>24/7</strong>
+          <span>infrastructure monitoring</span>
+        </div>
+        <div class="stat-card">
+          <strong>Hourly</strong>
+          <span>backup coverage</span>
+        </div>
+        <div class="stat-card">
+          <strong>Minutes</strong>
+          <span>to get your server online</span>
+        </div>
+      </div>
+    </section>
+
     <section class="games">
       <div class="container">
-        <h2>Popular Game Servers</h2>
+        <div class="section-heading">
+          <p class="eyebrow">Featured games</p>
+          <h2>Start with a popular title, then browse the full store.</h2>
+          <p>These are a few of the games we highlight on the landing page. If your game is not listed here, check the store for the full selection.</p>
+        </div>
         <div class="games-grid">
-        <div class="game-card">
-          <img src="assets/minecraft.png" alt="Minecraft" />
-          <a href="https://store.ibytehosting.com/products/minecraft" class="btn">From $4.50<br />Order</a>
+          <article class="game-card">
+            <img src="assets/minecraft.png" alt="Minecraft">
+            <div class="game-card-body">
+              <h3>Minecraft</h3>
+              <p>A dependable option for survival worlds, modpacks, minigames, and public communities.</p>
+              <a href="https://store.ibytehosting.com/products/minecraft" class="btn btn-primary" target="_blank" rel="noreferrer">From $4.50</a>
+            </div>
+          </article>
+          <article class="game-card">
+            <img src="assets/valheim.png" alt="Valheim">
+            <div class="game-card-body">
+              <h3>Valheim</h3>
+              <p>Simple hosting for shared worlds focused on exploration, building, and co-op play.</p>
+              <a href="https://store.ibytehosting.com/products/valheim" class="btn btn-primary" target="_blank" rel="noreferrer">From $6.60</a>
+            </div>
+          </article>
+          <article class="game-card">
+            <img src="assets/dayz_logo.png" alt="DayZ">
+            <div class="game-card-body">
+              <h3>DayZ</h3>
+              <p>Reliable hosting for persistent survival servers with straightforward administration.</p>
+              <a href="https://store.ibytehosting.com/products/dayz" class="btn btn-primary" target="_blank" rel="noreferrer">From $13.50</a>
+            </div>
+          </article>
+          <article class="game-card">
+            <img src="assets/terraria.png" alt="Terraria">
+            <div class="game-card-body">
+              <h3>Terraria</h3>
+              <p>Easy to launch and manage for small groups or long-running multiplayer worlds.</p>
+              <a href="https://store.ibytehosting.com/products/terraria" class="btn btn-primary" target="_blank" rel="noreferrer">From $3.60</a>
+            </div>
+          </article>
+          <article class="game-card">
+            <img src="assets/zomboid.png" alt="Project Zomboid">
+            <div class="game-card-body">
+              <h3>Project Zomboid</h3>
+              <p>Stable performance for co-op survival gameplay with room to expand over time.</p>
+              <a href="https://store.ibytehosting.com/products/project-zomboid" class="btn btn-primary" target="_blank" rel="noreferrer">From $7.50</a>
+            </div>
+          </article>
+          <article class="game-card">
+            <img src="assets/7d2d.png" alt="7 Days to Die">
+            <div class="game-card-body">
+              <h3>7 Days to Die</h3>
+              <p>Suitable for demanding worlds that benefit from clear management and scalable resources.</p>
+              <a href="https://store.ibytehosting.com/products/7-days-to-die" class="btn btn-primary" target="_blank" rel="noreferrer">From $13.50</a>
+            </div>
+          </article>
         </div>
-        <div class="game-card">
-          <img src="assets/valheim.png" alt="Valheim" />
-          <a href="https://store.ibytehosting.com/products/valheim" class="btn">From $6.60<br />Order</a>
-        </div>
-        <div class="game-card">
-          <img src="assets/dayz_logo.png" alt="DayZ" />
-          <a href="https://store.ibytehosting.com/products/dayz" class="btn">From $13.50<br />Order</a>
-        </div>
-        <div class="game-card">
-          <img src="assets/terraria.png" alt="Terraria" />
-          <a href="https://store.ibytehosting.com/products/terraria" class="btn">From $3.60<br />Order</a>
-        </div>
-        <div class="game-card">
-          <img src="assets/zomboid.png" alt="Project Zomboid" />
-          <a href="https://store.ibytehosting.com/products/project-zomboid" class="btn">From $7.50<br />Order</a>
-        </div>
-        <div class="game-card">
-          <img src="assets/7d2d.png" alt="7 Days to Die" />
-          <a href="https://store.ibytehosting.com/products/7-days-to-die" class="btn">From $13.50<br />Order</a>
-        </div>
-        </div>
-        <div class="more-options">
-          <a href="https://store.ibytehosting.com" class="btn">See All Games</a>
+        <div class="section-actions">
+          <a href="https://store.ibytehosting.com" class="btn btn-secondary" target="_blank" rel="noreferrer">Browse Full Store</a>
         </div>
       </div>
     </section>
+
     <section class="features">
       <div class="container">
-        <h2>What You Get</h2>
-        <div class="features-grid">
-          <div class="feature">
-            <h3>⛏️ Mod Support</h3>
-            <p>Install and run mods easily. Full compatibility for custom content.</p>
-          </div>
-          <div class="feature">
-            <h3>🫂 Subusers</h3>
-            <p>Invite others to help manage your server. Set permissions as needed.</p>
-          </div>
-          <div class="feature">
-            <h3>🌎 Free Subdomain</h3>
-            <p>Get a custom subdomain for your server at no extra cost.</p>
-          </div>
-          <div class="feature">
-            <h3>🧱 DDoS Protection</h3>
-            <p>Automatic DDoS protection keeps your server online and safe.</p>
-          </div>
-          <div class="feature">
-            <h3>⚡ Instant Setup</h3>
-            <p>Your server is ready to use within minutes of ordering—no waiting around.</p>
-          </div>
-          <div class="feature">
-            <h3>🔄 Hourly Backups</h3>
-            <p>We back up your files every hour and keep daily full server images for peace of mind.</p>
-          </div>
-          <div class="feature">
-            <h3>📈 24/7 Monitoring</h3>
-            <p>We monitor all servers around the clock to ensure maximum uptime and fast support.</p>
-          </div>
-          <div class="feature">
-            <h3>🔧 Full Control</h3>
-            <p>Access all server settings and install mods or plugins as you wish, with no restrictions.</p>
-          </div>
-          <div class="feature">
-            <h3>💬 Friendly Support</h3>
-            <p>Our team is here to help you with any questions or issues, any time.</p>
-          </div>
+        <div class="section-heading">
+          <p class="eyebrow">Included features</p>
+          <h2>Everything you need, without the clutter.</h2>
+        </div>
+        <div class="features-grid simple-features">
+          <article class="feature">
+            <h3>Hourly and cloud backups</h3>
+            <p>Frequent backups help protect your server data and recovery options.</p>
+          </article>
+          <article class="feature">
+            <h3>Mods</h3>
+            <p>Run modded servers without unnecessary setup friction.</p>
+          </article>
+          <article class="feature">
+            <h3>Subdomains</h3>
+            <p>Give players an easier way to connect to your server.</p>
+          </article>
+          <article class="feature">
+            <h3>Security</h3>
+            <p>Built with practical protections to keep your service more reliable.</p>
+          </article>
+          <article class="feature">
+            <h3>DDoS protection</h3>
+            <p>Helps keep services reachable during common network attacks.</p>
+          </article>
+          <article class="feature">
+            <h3>Fast setup</h3>
+            <p>Go from checkout to launch in minutes.</p>
+          </article>
+          <article class="feature">
+            <h3>Subusers</h3>
+            <p>Share panel access without giving out your main login.</p>
+          </article>
+          <article class="feature">
+            <h3>Modern panel</h3>
+            <p>Manage files, settings, and server actions from one clean control panel.</p>
+          </article>
+          <article class="feature">
+            <h3>Old worlds saved for 1 year</h3>
+            <p>Previous worlds are retained for up to one year for added peace of mind.</p>
+          </article>
         </div>
       </div>
     </section>
+
     <section class="control-panel">
-      <div class="container">
-        <h2>Intuitive Control Panel</h2>
+      <div class="container panel-layout">
+        <div class="section-heading panel-copy">
+          <p class="eyebrow">Control panel</p>
+          <h2>Manage everything from one place.</h2>
+          <p>The control panel keeps routine server management simple, whether you are restarting services, checking usage, or updating files.</p>
+        </div>
         <div class="panel-images">
-          <img src="assets/control-panel-1.png" alt="Control Panel Screenshot" />
-          <img src="assets/control-panel-2.png" alt="Control Panel Screenshot" />
+          <img src="assets/control-panel-1.png" alt="iByte Hosting control panel overview">
+          <img src="assets/control-panel-2.png" alt="iByte Hosting control panel server management view">
         </div>
       </div>
     </section>
-    <section class="faq">
-      <div class="container">
-        <h2>🚀 Why Choose Us</h2>
-        <div class="faq-item pricing-table">
-          <h3>Compare and Save</h3>
-          <p>8GB RAM + 50GB SSD for $15/month. See how we stack up:</p>
-          <table>
-            <thead>
-              <tr>
-                <th>Provider</th>
-                <th>Their Price (Monthly)</th>
-                <th>Your Savings with iByte</th>
-                <th>% Saved</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Provider 1</td>
-                <td>$27.99</td>
-                <td>$12.99</td>
-                <td>46.40%</td>
-              </tr>
-              <tr>
-                <td>Provider 2</td>
-                <td>$19.99</td>
-                <td>$4.99</td>
-                <td>25.00%</td>
-              </tr>
-              <tr>
-                <td>Provider 3</td>
-                <td>$29.99</td>
-                <td>$14.99</td>
-                <td>50.00%</td>
-              </tr>
-              <tr>
-                <td>Provider 4</td>
-                <td>$24.00</td>
-                <td>$9.00</td>
-                <td>37.50%</td>
-              </tr>
-              <tr>
-                <td>Provider 5</td>
-                <td>$20.00</td>
-                <td>$5.00</td>
-                <td>25.00%</td>
-              </tr>
-            </tbody>
-          </table>
+
+    <section class="compare">
+      <div class="container compare-layout">
+        <div class="section-heading compare-copy">
+          <p class="eyebrow">Pricing approach</p>
+          <h2>Clear plans with room to scale.</h2>
+          <p>
+            iByte Hosting is meant to stay simple: clear starting plans, practical features, and upgrade paths when your server needs more resources.
+            A sample 8 GB RAM and 50 GB SSD plan starts at <strong>$15/month</strong>.
+          </p>
+          <p class="compare-note">
+            For many common setups, that can be a noticeably better value than larger game hosting providers charging more for similar resources.
+          </p>
         </div>
-        <div class="faq-grid">
-          <div class="faq-item">
-            <h3>Cost Savings</h3>
-            <p>Save more with iByte. Our pricing is lower than most competitors, but you still get top-tier performance, support, and features—no compromises.</p>
+        <div class="compare-card">
+          <div class="compare-row">
+            <span>Fast provisioning</span>
+            <strong>Included</strong>
           </div>
-          <div class="faq-item">
-            <h3>Easy Upgrades</h3>
-            <p>Scale your server up or down as your needs change, with no hassle.</p>
+          <div class="compare-row">
+            <span>Hourly backups</span>
+            <strong>Included</strong>
+          </div>
+          <div class="compare-row">
+            <span>Subuser management</span>
+            <strong>Included</strong>
+          </div>
+          <div class="compare-row">
+            <span>Easy resource upgrades</span>
+            <strong>Included</strong>
+          </div>
+          <div class="compare-row">
+            <span>Support access</span>
+            <strong>Available</strong>
+          </div>
+          <div class="compare-highlight">
+            Competitive pricing matters, but the goal is simple: strong value without cutting the features people actually use.
           </div>
         </div>
       </div>
     </section>
+
     <section class="faq">
       <div class="container">
-        <h2>💡 FAQ</h2>
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Common questions.</h2>
+        </div>
         <div class="faq-grid">
-          <div class="faq-item">
-            <h3>Why use game server hosting?</h3>
-            <p>Hosting at home can expose you to attacks. We keep your server secure.</p>
-          </div>
-          <div class="faq-item">
-            <h3>How do I get support if I have an issue?</h3>
-            <p>Contact our team any time via email or the support panel. We're here to help.</p>
-          </div>
-          <div class="faq-item">
+          <article class="faq-item">
+            <h3>Why host with a provider instead of at home?</h3>
+            <p>It reduces the load on your own connection, improves convenience, and helps keep multiplayer access more consistent.</p>
+          </article>
+          <article class="faq-item">
             <h3>How fast is setup after I order?</h3>
-            <p>Your server is ready to use within minutes of payment—no waiting around.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Can I transfer my existing server to iByte?</h3>
-            <p>Yes, we can help you migrate your server files and settings. Contact support for assistance.</p>
-          </div>
-          <div class="faq-item">
-            <h3>What payment methods do you accept?</h3>
-            <p>We accept all major credit cards, PayPal, and more. See our store for details.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Is there a refund policy or trial period?</h3>
-            <p>We offer a satisfaction guarantee. Please see our Terms and Conditions for details.</p>
-          </div>
-          <div class="faq-item">
-            <h3>How do I access my control panel?</h3>
-            <p>After ordering, you'll receive login details to manage your server online.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Is my data private and secure?</h3>
-            <p>Yes, we use strong security practices and never share your data.</p>
-          </div>
-          <div class="faq-item">
-            <h3>What games do you support?</h3>
-            <p>We support a wide range of games. If you don't see your game listed, contact us—we may be able to host it.</p>
-          </div>
+            <p>Most servers are ready within minutes so you can move from checkout to launch without a long wait.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Can I migrate an existing server?</h3>
+            <p>Yes. Existing worlds and configuration files can usually be moved over with support assistance.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Can I give other people access?</h3>
+            <p>Yes. Subusers let you share management access without giving out your full account login.</p>
+          </article>
+          <article class="faq-item">
+            <h3>What payment methods are supported?</h3>
+            <p>Major payment methods are available through the store. Check the checkout flow for the latest supported options.</p>
+          </article>
+          <article class="faq-item">
+            <h3>What if I need help?</h3>
+            <p>You can reach out through email or the panel support flow whenever you need a hand.</p>
+          </article>
         </div>
       </div>
     </section>
   </main>
-  <footer>
+
+  <footer class="site-footer">
     <div class="container">
       <div class="footer-content">
-        <a href="/" class="logo">
-          <img src="assets/square_logo___copy.png" alt="iByte Hosting Logo" />
+        <a href="./index.html" class="logo" aria-label="iByte Hosting home">
+          <img src="assets/square_logo___copy.png" alt="iByte Hosting Logo">
+          <span>iByte Hosting</span>
         </a>
         <div class="footer-links">
-          <a href="https://panel.ibytehosting.com" target="_blank">Panel</a>
-          <a href="https://store.ibytehosting.com" target="_blank">Store</a>
-          <a href="mailto:support@ibytehosting.com?subject=iByteHosting Store Contact Us" target="_blank">Email Support</a>
-          <a href="https://wiki.ibytehosting.com" target="_blank">Docs</a>
-          <a href="https://status.ibytehosting.com" target="_blank">Status</a>
+          <a href="https://panel.ibytehosting.com" target="_blank" rel="noreferrer">Panel</a>
+          <a href="https://store.ibytehosting.com" target="_blank" rel="noreferrer">Store</a>
+          <a href="mailto:support@ibytehosting.com?subject=iByteHosting%20Contact" target="_blank" rel="noreferrer">Support</a>
+          <a href="https://wiki.ibytehosting.com" target="_blank" rel="noreferrer">Docs</a>
+          <a href="https://status.ibytehosting.com" target="_blank" rel="noreferrer">Status</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <a href="./terms-and-conditions.html">Terms and Conditions</a>
-        <span>Copyright © 2024-2025 iByteHosting</span>
-        <a href="./privacy-policy.html">Privacy Policy</a>
+        <span>Copyright &copy; 2026 iByte Hosting LLC</span>
+        <div class="footer-legal">
+          <a href="./terms-and-conditions.html">Terms and Conditions</a>
+          <a href="./privacy-policy.html">Privacy Policy</a>
+        </div>
       </div>
     </div>
   </footer>
